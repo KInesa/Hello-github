@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Payment form</form></h1>
+    <p>Reikia uzpildyti laukus su *</p>
+    <h2>Contact information</h2>
+    <form>
+        <fieldset>
+        <legend>Title</legend>
+        <div class="radio">
+            <input type="radio" id="Mrs" name="Mrs">
+            <label for="radio">Mrs</label><br>
+            <input type="radio" id="MS" name="MS">
+            <label for="radio">MS</label><br>
+        </div>
+    </fieldset>
+
+    <div class="info">
+        <label for="name">Name *:</label><br>
+        <input type="text" id="name" name="name" in-range out-of-fange><br>
+        <label for="mail">e-mail *</label><br>
+        <input type="e-mail" id="mail" name="mail" required in-range out-of-fange><br>
+        <label for="password">Password *:</label><br>
+        <input type="password" id="password" name="password" required in-range out-of-fange><br>
+    </div>
+
+      <h2>Payment information</h2>
+
+    <label for="cards">Card type</label>
+        <select id="cards" name="cards">
+            <option value="tuscia"></option>
+            <option value="visa">Visa</option>
+            <option value="maestro">Maestro</option>
+            <option value="paypal">Paypal</option>  
+        </select>
+
+        <div class="card_info">
+            <label for="number">Card number *:</label><br>
+            <input type="text" id="number" name="number" size="number" maxlength="16" minlength="16" required><br><br>
+            <label for="date">Expiration date *</label><br>
+            <input type="month" id="date" name="date" required><br><br>
+            <button type="button" hover>Validate the payment</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>

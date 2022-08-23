@@ -1,0 +1,48 @@
+body {
+  width: 550px;
+  height: auto;
+  margin: 25px 25px
+}
+  
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  fieldset{
+    width: 33%;
+  }
+  .radio input:focus {
+    outline: 4px solid rgb(244, 255, 33);
+    border-radius: 3px;
+  }
+  .card_info{
+    display: block;
+    align-items: left;
+    margin-top: 25px;
+  }
+  
+button{
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    background-color: aquamarine;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:valid,
+input:in-range {
+  border: 2px solid rgb(46, 224, 46);
+}
+input:invalid,
+input:out-of-range {
+  border: 2px solid red;
+}
+
+button:hover {
+  background-color: rgb(6, 17, 6);
+}
